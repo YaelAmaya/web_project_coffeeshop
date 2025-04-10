@@ -47,11 +47,6 @@
   text-decoration: none;
 }
 
-.header__content {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header__title {
   margin: 183px 0 28px 80px;
   max-width: 709px;
