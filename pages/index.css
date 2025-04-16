@@ -1,3 +1,8 @@
+.content {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -105,14 +110,14 @@
   background-color: #0a2850;
   background-size: cover;
   height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 100px 0 0 80px;
 }
 
 .recipes__title {
-  position: relative;
-  top: 100px;
-  left: 80px;
   max-width: 580px;
-
+  margin: 0 0 24px;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -122,11 +127,8 @@
 }
 
 .recipes__subtitle {
-  position: relative;
-  top: 76px;
-  left: 80px;
   max-width: 438px;
-
+  margin: 0 0 80px;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
@@ -134,7 +136,7 @@
 }
 
 .recipes__videos {
-  margin: 140px 0 0;
+  margin: 0;
   display: flex;
   column-gap: 40px;
   justify-content: center;
@@ -143,14 +145,91 @@
 .recipes__iframe {
   height: 273px;
   width: 480px;
+  margin: 0 0 24px;
 }
 
 .recipes__video-caption {
-  margin: 24px 0 0;
-
   font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+}
+
+/*Reservacion*/
+
+.reservation {
+  background-image: url(../images/background_reservation.svg);
+  background-color: #d9e7ff;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 100px 0 120px;
+  box-sizing: border-box;
+}
+
+.reservation__title {
+  margin: 0 0 80px;
+  justify-self: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.reservation__form {
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 385px;
+  justify-items: center;
+}
+
+.form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 32px;
+  align-content: center;
+  border: 1px solid;
+}
+
+.form__input {
+  box-sizing: border-box;
+  margin-top: 8px;
+  width: 100%;
+  height: 60px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.form__button {
+  display: block;
+  margin-bottom: 32px;
+  width: 100%;
+  height: 60px;
+  color: #ffffff;
+  background-color: #2f80ed;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.form__button:hover {
+  opacity: 70%;
+}
+
+.form__label_checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form__checkbox {
+  height: 20px;
+  width: 20px;
+  margin: 0 12px 0 0;
 }

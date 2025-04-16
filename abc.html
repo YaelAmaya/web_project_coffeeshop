@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diseños y Formularios</title>
+    <link
+      rel="stylesheet"
+      href="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_normalize.css"
+    />
+    <link rel="stylesheet" href="abc.css" />
+    <link rel="stylesheet" href="fonts.css" />
+  </head>
+  <body>
+    <div class="page">
+      <section class="form">
+        <div class="form__toggle">
+          <img
+            class="form__toggle-image"
+            src="https://practicum-content.s3.us-west-1.amazonaws.com/html-forms/moved_close_icon.png"
+            alt="An image"
+          />
+        </div>
+        <div class="form__container">
+          <form class="form__admin">
+            <div class="form__main-container">
+              <h2 class="form__heading">Elige tu configuración deseada</h2>
+              <fieldset
+                class="form__input-container form__input-container_ctrl_texts"
+              >
+                <label class="form__label" for="heading">Título</label>
+                <input
+                  type="text"
+                  class="form__item form__item_el_heading"
+                  id="heading"
+                  name="heading"
+                  placeholder="Título de tu artículo"
+                  required
+                />
+                <label class="form__label" for="subheading">Subtítulo</label>
+                <input
+                  type="text"
+                  class="form__item form__item_el_subheading"
+                  id="subheading"
+                  name="subheading"
+                  placeholder="Breve descripción"
+                  required
+                />
+                <label class="form__label" for="main-text"
+                  >Texto principal</label
+                >
+                <textarea
+                  class="form__item form__item_el_main-text"
+                  id="main-text"
+                  name="main-text"
+                  placeholder="Introduce aquí el texto principal de tu artículo"
+                  required
+                ></textarea>
+                <label class="form__label" for="email"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form__item form__item_el_email"
+                  id="email"
+                  name="email"
+                  placeholder="hello@example.com"
+                />
+              </fieldset>
+              <div class="form__line"></div>
+              <fieldset
+                class="form__input-container form__input-container_ctrl_visual"
+              >
+                <label class="form__label" for="font-family"
+                  >Familia tipográfica</label
+                >
+                <select
+                  class="form__item form__item_el_font-family"
+                  id="font-family"
+                  name="font-family"
+                >
+                  <option value="ibm">IBM Plex Serif</option>
+                  <option value="ubuntu">Ubuntu</option>
+                  <option value="istok">Istok Web</option>
+                </select>
+                <label class="form__label" for="heading-font-size"
+                  >Tamaño de la fuente del título</label
+                >
+                <input
+                  type="number"
+                  class="form__item form__item_el_heading-fontsize"
+                  id="heading-font-size"
+                  name="heading-font-size"
+                  value="32"
+                  min="24"
+                  max="80"
+                />
+                <label class="form__label" for="text-font-size"
+                  >Tamaño de la fuente del texto</label
+                >
+                <input
+                  type="number"
+                  class="form__item form__item_el_text-fontsize"
+                  id="text-font-size"
+                  name="text-font-size"
+                  value="24"
+                  min="12"
+                  max="40"
+                />
+                <label class="form__label" for="pub-date"
+                  >Fecha de publicación</label
+                >
+                <input
+                  type="date"
+                  class="form__item form__item_el_pubdate"
+                  id="pub-date"
+                  name="pub-date"
+                />
+                <label class="form__label" for="image">
+                  Portada del artículo</label
+                >
+                <select
+                  class="form__item form__item_el_image"
+                  id="image"
+                  name="image"
+                >
+                  <option value="bombardier">Bombardier CS300</option>
+                  <option value="hobbit">Hobbit-themed Boeing 777</option>
+                  <option value="tiger">Amur Tiger Boeing 747</option>
+                </select>
+              </fieldset>
+              <fieldset
+                class="form__input-container form__input-container_ctrl_additional"
+              >
+                <h3 class="form__heading form__heading_type_ctrl-el-heading">
+                  Número de columnas
+                </h3>
+                <label
+                  class="form__label form__label_direction_right"
+                  for="one-column"
+                >
+                  <input
+                    type="radio"
+                    name="number-of-columns"
+                    id="one-column"
+                    class="form__item form__item_el_number-of-columns"
+                    value="one-column"
+                    checked
+                  />
+                  <span
+                    class="form__pseudo-item form__pseudo-item_type_radio"
+                  ></span>
+                  <span class="form__label-text">1</span>
+                </label>
+                <br />
+                <label
+                  class="form__label form__label_direction_right"
+                  for="two-columns"
+                >
+                  <input
+                    type="radio"
+                    name="number-of-columns"
+                    id="two-columns"
+                    class="form__item form__item_el_number-of-columns"
+                    value="two-columns"
+                  />
+                  <span
+                    class="form__pseudo-item form__pseudo-item_type_radio"
+                  ></span>
+                  <span class="form__label-text">2</span>
+                </label>
+                <label class="form__label" for="text-color"
+                  >Color del texto</label
+                >
+                <input
+                  type="color"
+                  class="form__item form__item_el_text-color"
+                  id="text-color"
+                  name="text-color"
+                  value="#979797"
+                />
+                <label class="form__label" for="content-width"
+                  >Ancho del contenido</label
+                >
+                <input
+                  type="range"
+                  class="form__item form__item_el_content-width"
+                  id="content-width"
+                  name="content-width"
+                  min="30"
+                  max="80"
+                  step="10"
+                />
+                <h3 class="form__heading form__heading_type_ctrl-el-heading">
+                  Opciones adicionales
+                </h3>
+
+                <label
+                  class="form__label form__label_direction_right"
+                  for="black-background"
+                >
+                  <input
+                    type="checkbox"
+                    class="form__item form__item_el_extra-options"
+                    name="extra-option"
+                    id="black-background"
+                    value="black-background"
+                  />
+                  <span
+                    class="form__pseudo-item form__pseudo-item_type_checkbox"
+                  ></span>
+                  <span class="form__label-text">Fondo negro</span>
+                </label>
+                <br />
+                <label
+                  class="form__label form__label_direction_right"
+                  for="bold-heading"
+                >
+                  <input
+                    type="checkbox"
+                    class="form__item form__item_el_extra-options"
+                    name="extra-option"
+                    id="bold-heading"
+                    value="bold-heading"
+                    checked
+                  />
+                  <span
+                    class="form__pseudo-item form__pseudo-item_type_checkbox"
+                  ></span>
+                  <span class="form__label-text">Titular en negrita</span>
+                </label>
+              </fieldset>
+            </div>
+            <fieldset class="form__handlers">
+              <button type="submit" class="form__button">Enviar</button>
+              <button type="reset" class="form__button">Reiniciar</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <section class="content">
+        <div class="content__container">
+          <header class="content__header">
+            <h1 class="content__heading">La imagen de la Suiza romanda</h1>
+            <h2 class="content__subheading">
+              La nueva aeronave de SWISS diseñada por el artista naíf Fichtre
+            </h2>
+          </header>
+          <div class="content__image">
+            <img
+              class="content__image-item"
+              src="https://practicum-content.s3.us-west-1.amazonaws.com/html-forms/moved_BOMBARDIER.jpg"
+            />
+            <div class="content__image-copyright">
+              Photo by
+              <a
+                class="content__link"
+                href="https://www.flickr.com/photos/sloppyperfectionist/35863293766/"
+                target="_blank"
+              >
+                Hans-Peter Gauster
+              </a>
+              , "Bombardier CSeries CS300 HB-JCA" © 2017
+              <a
+                class="content__link"
+                href="https://creativecommons.org/licenses/by-sa/2.0/legalcode"
+                target="_blank"
+              >
+                CC BY-SA 2.0
+              </a>
+              &nbsp;&nbsp;
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/html-forms/moved_BOMBARDIER_CC.svg"
+                alt=""
+                height="10"
+              />
+            </div>
+          </div>
+          <div class="content__text">
+            <p class="content__paragraph">
+              A finales de 2016, la Aerolínea Suiza Internacional (SWISS)
+              recibió su primer Bombardier CS300 canadiense para vuelos de corta
+              y media distancia. Para la ocasión, se contrató a un artista para
+              diseñar los colores de la compañía con el objetivo de darle una
+              personalidad única a su avión de 145 plazas. Esto se realizaría
+              con la condición de que el diseño fuera obra exclusiva del
+              artista, y de que ellos ayudaran personalmente a pintar el
+              fuselaje.
+            </p>
+            <p class="content__paragraph">
+              Este proyecto cayó en manos del artista naíf Mathias Forbach,
+              también conocido como Fichtre, al que se le encargó incorporar
+              todo lo que caracteriza a la Suiza romana - montañas, lagos, vino,
+              queso, amabilidad, y libertad - en un único diseño. El proyecto se
+              terminó en un tiempo récord de cinco meses. Con su buena onda
+              innata y una sonrisa de oreja a oreja, el avión acabó siendo un
+              reflejo de su creador.
+            </p>
+            <p class="content__paragraph">
+              En mayo de 2017, el recién terminado Bombardier fue apodado "Suiza
+              Romana" con su número de registro.
+              <a
+                class="content__link"
+                href="https://www.flightradar24.com/data/aircraft/hb-jca"
+                target="_blank"
+              >
+                HB-JCA
+              </a>
+              . Realiza una media de cuatro viajes comerciales al día y puede
+              verse en aeropuertos de toda Europa, como el de París, Valencia,
+              Cracovia, Berlín, Moscú, Viena y Zagreb, así como en Mallorca,
+              Creta y Sicilia. Este avión siempre mantendrá sus colores de
+              compañía, a no ser que lo compre otra aerolínea.
+            </p>
+          </div>
+          <div class="content__date">10.10.18</div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container"></div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
